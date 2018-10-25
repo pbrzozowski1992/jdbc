@@ -10,7 +10,7 @@ public class Main {
     private static Menu menu = new Menu();
 
     public static void main(String[] args) {
-        Config config = new Config("library", "jdbc:mysql://localhost/library", "root", "@nXAweCS9pb");
+        Config config = new Config("library", "jdbc:mysql://localhost/library", "root", "password");
         JDBCService service = new PostgreSQLService(config);
         while (true) {
             menu.showMenu();
